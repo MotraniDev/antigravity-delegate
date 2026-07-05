@@ -1,0 +1,39 @@
+# Credentials and local auth — never commit
+.env
+.env.*
+*.env
+auth.json
+**/auth.json
+credentials.json
+**/credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+**/secrets.json
+
+# Antigravity / Gemini CLI OAuth (stored on machine, not in repo)
+antigravity-oauth-token
+**/antigravity-oauth-token
+**/antigravity-cli/settings.json
+**/.gemini/antigravity-cli/
+
+# OpenCode auth (if mixed into this tree)
+.opencode/auth.json
+**/.opencode/auth.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Temp / brief artifacts (local dispatch only)
+brief.txt
+*-brief*.txt
+result.json
+events.jsonl

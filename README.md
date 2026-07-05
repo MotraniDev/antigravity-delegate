@@ -26,6 +26,10 @@ agy
 
 Verify: `cmdkey /list | Select-String antigravity`
 
+## Credentials stay local
+
+This repo contains **no API keys or OAuth tokens**. Antigravity auth is Google OAuth in the OS keyring / `%LOCALAPPDATA%\antigravity-cli\` on your machine. The delegate scripts only **check** that credentials exist; they never embed or upload them. `.gitignore` blocks token files from being committed.
+
 ## Quick test
 
 ```powershell
